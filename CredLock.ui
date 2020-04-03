@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CredLock</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>techniex.png</normaloff>techniex.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuUser">
+    <property name="title">
+     <string>User</string>
+    </property>
+    <addaction name="actionAdd_New_Account"/>
+    <addaction name="actionSwitch_Account"/>
+    <addaction name="actionView_Activity"/>
+    <addaction name="separator"/>
+    <addaction name="actionGenerate_CredKey"/>
+    <addaction name="actionLog_Out"/>
+    <addaction name="separator"/>
+    <addaction name="actionUpdate_Password"/>
+    <addaction name="actionUpdate_Pin"/>
+    <addaction name="separator"/>
+    <addaction name="actionDelete_Account"/>
+   </widget>
+   <widget class="QMenu" name="menuPassword_Locker">
+    <property name="title">
+     <string>Password Locker</string>
+    </property>
+    <addaction name="actionAdd_new"/>
+    <addaction name="actionRefresh"/>
+    <addaction name="actionRe_Encrypt"/>
+    <addaction name="actionGenerate_Password"/>
+   </widget>
+   <widget class="QMenu" name="menuFile_Operations">
+    <property name="title">
+     <string>File Operations</string>
+    </property>
+    <addaction name="actionEncrypt_File_Self"/>
+    <addaction name="actionDecrypt_File_Self"/>
+    <addaction name="separator"/>
+    <addaction name="actionEncrypt_File"/>
+    <addaction name="actionDecrypt_File"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <widget class="QMenu" name="menuDocumentation">
+     <property name="title">
+      <string>Documentation</string>
+     </property>
+     <addaction name="actionLocal_2"/>
+     <addaction name="actionPDF"/>
+    </widget>
+    <addaction name="actionGetting_Started"/>
+    <addaction name="separator"/>
+    <addaction name="menuDocumentation"/>
+    <addaction name="actionRepository"/>
+    <addaction name="separator"/>
+    <addaction name="actionLicense"/>
+    <addaction name="separator"/>
+    <addaction name="actionWebsite"/>
+    <addaction name="actionCredits"/>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="actionLocations"/>
+    <addaction name="actionMethod"/>
+    <addaction name="actionPrefrences"/>
+   </widget>
+   <addaction name="menuUser"/>
+   <addaction name="menuPassword_Locker"/>
+   <addaction name="menuFile_Operations"/>
+   <addaction name="menuSettings"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionUpdate_Password">
+   <property name="text">
+    <string>Update Password</string>
+   </property>
+  </action>
+  <action name="actionUpdate_Pin">
+   <property name="text">
+    <string>Update Pin</string>
+   </property>
+  </action>
+  <action name="actionAdd_new">
+   <property name="text">
+    <string>Add New</string>
+   </property>
+  </action>
+  <action name="actionEncrypt_File_Self">
+   <property name="text">
+    <string>Encrypt File (Self)</string>
+   </property>
+  </action>
+  <action name="actionEncrypt_File">
+   <property name="text">
+    <string>Encrypt File</string>
+   </property>
+  </action>
+  <action name="actionDecrypt_File_Self">
+   <property name="text">
+    <string>Decrypt File (Self)</string>
+   </property>
+  </action>
+  <action name="actionDecrypt_File">
+   <property name="text">
+    <string>Decrypt File</string>
+   </property>
+  </action>
+  <action name="actionLocal">
+   <property name="text">
+    <string>Local</string>
+   </property>
+  </action>
+  <action name="actionWeb">
+   <property name="text">
+    <string>Web</string>
+   </property>
+  </action>
+  <action name="actionDelete_Account">
+   <property name="text">
+    <string>Delete Account</string>
+   </property>
+  </action>
+  <action name="actionAdd_New_Account">
+   <property name="text">
+    <string>Add New User</string>
+   </property>
+  </action>
+  <action name="actionSwitch_Account">
+   <property name="text">
+    <string>Switch User</string>
+   </property>
+  </action>
+  <action name="actionLog_Out">
+   <property name="text">
+    <string>Log Out</string>
+   </property>
+  </action>
+  <action name="actionRefresh">
+   <property name="text">
+    <string>Refresh</string>
+   </property>
+  </action>
+  <action name="actionLocations">
+   <property name="text">
+    <string>Locations</string>
+   </property>
+  </action>
+  <action name="actionMethod">
+   <property name="text">
+    <string>Method</string>
+   </property>
+  </action>
+  <action name="actionPrefrences">
+   <property name="text">
+    <string>Prefrences</string>
+   </property>
+  </action>
+  <action name="actionGenerate_CredKey">
+   <property name="text">
+    <string>Generate CredKey</string>
+   </property>
+  </action>
+  <action name="actionGetting_Started">
+   <property name="text">
+    <string>Getting Started</string>
+   </property>
+  </action>
+  <action name="actionLicense">
+   <property name="text">
+    <string>License</string>
+   </property>
+  </action>
+  <action name="actionCredits">
+   <property name="text">
+    <string>Credits</string>
+   </property>
+  </action>
+  <action name="actionLocal_2">
+   <property name="text">
+    <string>HTML</string>
+   </property>
+  </action>
+  <action name="actionPDF">
+   <property name="text">
+    <string>PDF</string>
+   </property>
+  </action>
+  <action name="actionRe_Encrypt">
+   <property name="text">
+    <string>Re-Encrypt</string>
+   </property>
+  </action>
+  <action name="actionGenerate_Password">
+   <property name="text">
+    <string>Generate Password</string>
+   </property>
+  </action>
+  <action name="actionRepository">
+   <property name="text">
+    <string>Repository</string>
+   </property>
+  </action>
+  <action name="actionWebsite">
+   <property name="text">
+    <string>Website</string>
+   </property>
+  </action>
+  <action name="actionView_Activity">
+   <property name="text">
+    <string>View Activity</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
