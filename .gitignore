@@ -1,0 +1,8 @@
+#test folder
+test/
+
+#project folder
+.spyproject/
+
+#cache
+__pycache__/
